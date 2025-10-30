@@ -9,8 +9,7 @@ const connectDb = require("./config/connectDb");
 
 app.use(express.json());
 app.use(limiter);
-app.use("/api", urlRoute);
-app.use("/r", urlRoute);
+app.use("/", urlRoute);
 
 
 const PORT = process.env.PORT || 3000;
